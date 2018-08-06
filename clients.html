@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    
+<!-- Bootstrap Css-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">   
+    
+
+<link rel="stylesheet" href="css/myStyle.css">
+   <title>JAM PORTAL, INC</title>
+</head>
+<body>
+        <style type="text/css">
+
+$body-bg:    $gray-dark;
+$body-color: $gray-light;
+    </style>
+    
+    <!-- above code allows text and image to scroll over fixed background -->
+         
+          <div class="jumbotron-fluid jumbotron-fluid-background">
+        <!--.nav.navbar.navbar-expand-md.navbar-transparent.navbar-inverse-->
+        <div class="nav navbar navbar-expand-md navbar-transparent navbar-light" >
+            <!--a.navbar-brand>img-->
+        <a href="index.html" class="navbar-brand"></a>
+        <!--button.navbar-toggler[data-toggle=collapse data-target=#myNavbar]-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--.collapse.navbar-collapse#myNavbar-->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!--ul.navbar-nav>li.nav-item*8>a.nav-link[href=#]{Home}-->
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="aboutus.html" class="nav-link">ABOUT</a></li>
+                <li><a href="tracks.html" class="nav-link">TRACKS</a></li>
+                <li><a href="clients.html" class="nav-link">CLIENTS</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+        </div><!--navbar-->
+        <div>
+                       <div class="container text-center">
+       <div class="row">
+           <div class="col-sm">
+            <h1>OUR CLIENTS</h1>
+        </div>
+    <!-- below code for photo slide show -->  
+                   
+        <div class="container text-center">
+            <div class="sm-6 md-3"> 
+       <div class="row">
+            <div id="slideshow">
+  <img class="mySlides" src="images/CountrySinger.jpg" style="width: 700px;">
+  <img class="mySlides" src="images/SaxPlayer.jpg" style="width: 700px">
+  <img class="mySlides" src="images/Rapper.jpg" style="width: 700px">
+  <img class="mySlides" src="images/DJClient.jpg" style="width: 700px">
+               </div>
+              <div class="container text-center">
+       <div class="row">
+           <div class="sm-6 md-3">
+  <button class="button black-left" onclick="plusDivs(-1)" style="height:50px" "width: 50px">&#10094;</button>
+  <button class="button black-right" onclick="plusDivs(1)" style="height:50px" "width: 50px">&#10095;</button>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+    <!-- end of code for photo slide show -->
+
+</script>
+        
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/myScript.js"></script>
+          
+           
+</body> 
+</html>
