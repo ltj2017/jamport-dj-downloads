@@ -3,6 +3,12 @@ margin-top: 6px;
 background-color: rgba(47,79,79,1.0);
 }
 
+.navbar-brand {
+    font-family: ubuntu, open-sans;
+    font-size: 40px;
+    
+}
+
 .dropbtn {
     background-color: #554466;
     color: white;
@@ -44,7 +50,7 @@ background-color: rgba(47,79,79,1.0);
 }
 .jumbotron-fluid-background {
     height: 256px;
-    background-image: url("../images/JAMPORTtopbar.jpg");
+    background-image: url("../images/metallic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -70,7 +76,7 @@ p {
     font-size: 1.5em;
     font-family: sans-serif; 
     line-height: 1.5em;
-    color: gray;
+    color: black;
     margin-top: 30px;
  }
 

@@ -27,7 +27,7 @@ $body-color: $gray-light;
         <!--.nav.navbar.navbar-expand-md.navbar-transparent.navbar-inverse-->
         <div class="nav navbar navbar-expand-md navbar-transparent navbar-light" >
             <!--a.navbar-brand>img-->
-        <a href="index.html" class="navbar-brand"></a>
+        <a href="index.html" class="navbar-brand">JAMPORT</a>
         <!--button.navbar-toggler[data-toggle=collapse data-target=#myNavbar]-->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
            <span class="navbar-toggler-icon"></span>
@@ -52,43 +52,27 @@ $body-color: $gray-light;
         </div>
     <!-- below code for photo slide show -->  
                    
-        <div class="container text-center">
-            <div class="sm-6 md-3"> 
-       <div class="row">
-            <div id="slideshow">
-  <img class="mySlides" src="images/CountrySinger.jpg" style="width: 700px;">
-  <img class="mySlides" src="images/SaxPlayer.jpg" style="width: 700px">
-  <img class="mySlides" src="images/Rapper.jpg" style="width: 700px">
-  <img class="mySlides" src="images/DJClient.jpg" style="width: 700px">
-               </div>
-              <div class="container text-center">
-       <div class="row">
-           <div class="sm-6 md-3">
-  <button class="button black-left" onclick="plusDivs(-1)" style="height:50px" "width: 50px">&#10094;</button>
-  <button class="button black-right" onclick="plusDivs(1)" style="height:50px" "width: 50px">&#10095;</button>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-    <!-- end of code for photo slide show -->
-
-</script>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/CountrySinger.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="SaxPlayer.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="DJClient.jpg">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
         
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
