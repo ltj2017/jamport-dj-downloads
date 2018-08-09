@@ -57,9 +57,6 @@ background-color: rgba(47,79,79,1.0);
     
 }
 
-.carousel, .carousel-inner {
-    height: 675px;
-}
 
 .carousel-inner img {
     width: 100%;
@@ -124,7 +121,7 @@ button:hover {
     position: relative;
 }
 
-img.avatar {
+  .avatar {
     width: 40%;
     border-radius: 50%;
 }
