@@ -17,7 +17,7 @@
 <style type="text/css">
 
 body {
-    background-image: url("images/headphone.jpg");
+    background-image: url("images/goldbackground.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -41,7 +41,6 @@ body {
             <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.html" class="nav-link">HOME</a></li>
                 <li><a href="aboutus.html" class="nav-link">ABOUT</a></li>
-                <li><a href="tracks.html" class="nav-link">TRACKS</a></li>
                 <li><a href="clients.html" class="nav-link">CLIENTS</a></li>
                 <li><a href="contact.html" class="nav-link">CONTACT</a></li>
             </ul>
@@ -82,18 +81,17 @@ $(document).ready(function(){
   <h3>Artist: Joey T</h3>
   <h3>Title: The Awakening</h3>
   <h3>Label: Unsigned</h3>
-  <h3>Check off your opinion:</h3>
-  <form>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">BAD</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">GOOD</label>
-    </div>
-    <div class="checkbox disabled">
-      <label><input type="checkbox" value="">EXCELLENT</label>
-    </div>
-  </form>
+  <h3>Choose your opinion:</h3>
+  <form action="/action_page.php">
+   <select name="track" size="4">
+       <option value="excellent">EXCELLENT</option>
+        <option value="good">GOOD</option>
+         <option value="fair">FAIR</option>
+          <option value="sucks">SUCKS</option>
+   </select>
+   <br><br>
+  <input type="submit">
+   </form>
 </div>
 <br />
 
